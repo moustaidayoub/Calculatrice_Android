@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:orientation="vertical">
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Valeur 1"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        />
+    <EditText 
+        android:id="@+id/valeur1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez la premiere valeur "
+        android:inputType="number"
+        />
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Valeur 2"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        />
+    <EditText 
+        android:id="@+id/valeur2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez la deuxieme valeur "
+        android:inputType="number"
+        />
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Opération"
+        android:textColor="#FF0000"
+        android:gravity="center"
+        />
+    <RadioGroup
+        android:id="@+id/operation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/addition"
+        android:gravity="center"
+        >
+        <RadioButton 
+            android:id="@+id/addition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textStyle="bold"
+            />
+        <RadioButton 
+            android:id="@+id/soustraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+             android:textStyle="bold"
+            />
+        <RadioButton 
+            android:id="@+id/division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+             android:textStyle="bold"
+            />
+        <RadioButton 
+            android:id="@+id/multiplication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+             android:textStyle="bold"
+            />
+        </RadioGroup>
+          <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultat : "
+        android:gravity="center"
+        />
+            <TextView 
+                android:id="@+id/resultat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrez les valeurs et cliquez sur -Calculer-"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        />
+        <Button 
+            android:id="@+id/calculer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculer"
+            />
+</LinearLayout>
